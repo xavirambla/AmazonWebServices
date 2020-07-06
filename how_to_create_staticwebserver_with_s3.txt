@@ -1,0 +1,27 @@
+Expand for step-by-step instructions. 
+•En la AWS Consola, click Servicios, Entonces click S3 para abrir el dashboard S3.
+•Desde el dashboard S3, click Crear Bucket.
+•Informa Nombre: identificador único del Bucket.
+•REgión, indicar Irlanda (suele ser la más barata de Europa - Poner un servidor europeo para reducir la latencia)
+Click en Siguiente: Propiedades. (no tocar nada)
+Click en Siguiente: Establecer permisos.
+•Desbloquear todo. Aparece un mensaje de aprobación, darle al check. (cambiaremos los permisos manualmente).
+Click en Siguiente: Revisión.
+Click en Crear bucket.
+•Seleccionar bucket-> parte derecha aparecen los detalles.
+•Acceder a Permisos/Lista de control de acceso
+•Visitar Acceso público/ Everyone. Comprobar que no tiene acceso a escritura 
+Ir a Propiedades.
+HAbilitar 'Static website hosting'
+•usar este bucket para alojar un sitio web.	
+  •documento de índice : index.html
+  •documento de error : error.html
+Click en Guardar.
+•Ahora ir a 'información general' y subir todos los archivos ESTÁTICOS al servidor
+• Para cada uno de los ficheros:
+  • entrar , acceder a permisos/ Ir a Acceso Público/ Everyone y seleccionar 'Leer objeto' (Acceso al objeto).
+  • Guardar
+Volver al Bucket y en sus propiedades. 
+click sobre 'Alojamiento de sitios web estáticos'
+Click sobre 'Punto de Enlace' - Para abrir la web y ver el resultado
+	
